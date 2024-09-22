@@ -1,0 +1,153 @@
+/*cordovan: #904E55
+isssabelline(like skin):#F2EFE9
+erie black:#252627
+*/
+header{
+    height:125px;
+    width:100%;
+    background-color: #f2efe9;
+    display: flex;
+    align-items: center;
+  
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+nav menu{
+    display: flex;
+    margin-left: 20px;
+    position: relative;
+    left: 261px;
+    bottom: 2px; 
+}
+#one,#two{
+    border-right:3px solid #904E55 ;
+}
+nav menu li a{
+    padding:0 15px;
+    font-size: 1.5em;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #904e55;
+    text-shadow:4px 2px 4px rgba(144, 78, 85, 0.7);
+}
+nav menu li a:hover{
+    color:#252627;
+    text-shadow:4px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.logo{
+    height:200px;
+    width:200px;
+}
+.logo img{
+    height:100%;
+    width:auto;
+}
+.logo img:hover{
+    filter: contrast(1.5);
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#904E55;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.7);
+}
+.hero::before {
+    content: "";
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(4px); 
+    z-index: -1; 
+    animation: slider 10s linear infinite;
+}
+@keyframes slider{
+    0%{background-image: url("../img/bg1.jpg");}
+    30%{background-image: url("../img/bg2.jpg");}
+    60%{background-image: url("../img/bg3.jpeg");}
+    100%{background-image: url("../img/bg4.jpeg");}
+}
+.hero h1{
+font-size: 8em;
+font-family: "Astloch", system-ui;
+font-weight: 700;
+font-style: normal;
+color:#c0c0c0;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+}
+.video div{
+    height:70vh;
+    width:760px;
+}
+.video div iframe{
+    height:70vh;
+    width:760px;
+}
+.lyrics{
+    height:70vh;
+    width:760px;
+}
+.container{
+    height:70vh;
+    width:660px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    background-color: #252627;
+    color:#f2efe9;
+    text-shadow: 2px 1px 2px rgba(0,0,0,.7)
+}
+.container pre{
+    font-size: 1.6em;
+    padding: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+    width:500px;
+}
+.container pre span{
+    font-size: 1.9em;
+    color:#904E55;
+    text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.7)
+}
+footer{
+    background-color: #f2efe9;
+    height:125px;
+    color:#904E55;
+    font-weight: bolder;
+    font-size:3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    text-align: center;
+    padding:30px 0;
+    font-family: "Astloch", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow:4px 2px 4px rgba(144, 78, 85, 0.7);
+}
+footer img{
+    height:150px;
+    width:150px;
+}
